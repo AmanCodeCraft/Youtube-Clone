@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+}
+
+p{
+    color: #0f0f0f;
+}
+
+.small-p{
+    color: #606060;
+}
+
+.flexo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar{
+    justify-content: space-between;
+}
+
+.profile-pic{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.search-area{
+    border: 2px solid green;
+}
+
+.search-box{
+    border: 2px solid black;
+    padding: 5px 40px;
+    background-image: url(./images/search.png);
+    background-repeat: no-repeat;
+}
+
