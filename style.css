@@ -6,12 +6,13 @@
     background-color: #ffffff;
 }
 
-p{
-    color: #0f0f0f;
+a{
+    text-decoration: none;
+    color: #5a5a5a;
 }
 
-.small-p{
-    color: #606060;
+img{
+    cursor: pointer;
 }
 
 .flexo{
@@ -20,22 +21,148 @@ p{
 }
 
 .nav-bar{
+    padding: 10px 2%;
     justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-.profile-pic{
-    width: 40px;
+.nav-right>img{
+    width: 25px;
+    margin-right: 25px;
+}
+
+.nav-right>.profile-pic,.subscribed-list>ul>li>a>.profile-pic{
+    width: 35px;
     border-radius: 50%;
+    margin-right: 0;
 }
 
-.search-area{
-    border: 2px solid green;
+.manu-icon{
+    width: 22px;
+    margin-right: 20px;
 }
 
-.search-box{
-    border: 2px solid black;
-    padding: 5px 40px;
-    background-image: url(./images/search.png);
-    background-repeat: no-repeat;
+.logo{
+    width: 130px;
 }
 
+.nav-center>.mic-icon{
+    width: 16px;
+}
+
+.nav-center>.search-box{
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    padding: 6px 10px;
+    border-radius: 25px;
+}
+
+.nav-center>.search-box>input{
+    width: 350px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.nav-center>.search-box>img{
+    width: 15px;
+}
+
+/* side bar styling */
+
+.side-bar{
+    background-color: #fff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+}
+
+.side-bar>ul>li>a>img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.side-bar>ul,.subscribed-list>ul{
+    list-style: none;
+}
+
+.side-bar>ul>li>a{
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    width: fit-content;
+}
+
+.side-bar>ul>hr{
+    border: 0;
+    height: 1px;
+    width: 85%;
+    background-color: #ccc;
+}
+
+.subscribed-list>h3{
+    font-size: 16px;
+    margin: 15px 0px;
+}
+
+.subscribed-list>ul>li>a{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+.subscribed-list>ul>li>a>.profile-pic{
+    margin: 5px 10px;
+}
+
+/* main section */
+
+.container{
+    background-color: #f9f9f9;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner>img{
+    width: 100%; 
+    border-radius: 8px;
+}
+
+/* videos section */
+
+.video-box{
+    border: 2px solid rebeccapurple;
+    width: 280px;
+    height: 180px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.videos-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumbnail{
+    width: 100%;
+}
+
+.thumbnail>img{
+    width: 100%;
+}
