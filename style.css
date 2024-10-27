@@ -57,7 +57,7 @@ img{
 .nav-center>.search-box{
     border: 1px solid #ccc;
     margin-right: 10px;
-    padding: 6px 10px;
+    padding: 6px 12px;
     border-radius: 25px;
 }
 
@@ -147,16 +147,15 @@ img{
 /* videos section */
 
 .video-box{
-    border: 2px solid rebeccapurple;
-    width: 280px;
-    height: 180px;
-    margin: 5px;
-    border-radius: 8px;
+    width: 32%;
+    margin-block: 6px;
 }
 
 .videos-section{
     display: flex;
+    gap: 10px;
     flex-wrap: wrap;
+    padding-left: 15px;
 }
 
 .thumbnail{
@@ -165,4 +164,35 @@ img{
 
 .thumbnail>img{
     width: 100%;
+    border-radius: 8px;
+}
+
+.video-box-profile{
+    margin: 5px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+
+.videos-section>.video-box>.content-area>.channel-name{
+    flex-direction: column;
+    align-items: start;
+    padding: 4px 5px;
+}
+
+.videos-section>.video-box>.content-area>.channel-name>p{
+    font-weight: 600;
+}
+
+.grey{
+    font-size: .9rem;
+    color: #5a5a5a;
+}
+
+.channel{
+    padding-left: 17%;
+    padding-bottom: 5px;
+    flex-direction: column;
+    gap: 2px;
+    align-items: start;
 }
